@@ -1,0 +1,219 @@
+.comments .comment_header {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.comments .comment_header .total {
+  color: #777777;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.comments .comment_header .write_comment_btn {
+  margin: 0;
+}
+
+.comments .comment_header form {
+  padding-right: 15px;
+}
+
+.comments .comment_header form select {
+  border: 1px solid #eee;
+  padding: 5px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.comments .write_comment_btn, .comments .write_comment button {
+  display: inline-block;
+  background-color: #5c606b;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 10px 0 0 0;
+  padding: 7px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+  transition: background-color .2s ease;
+}
+
+.comments .write_comment_btn:hover, .comments .write_comment button:hover {
+  background-color: #50545d;
+  transition: background-color .2s ease;
+}
+
+.comments .write_comment {
+  display: none;
+  padding: 20px 0 10px 0;
+}
+
+.comments .write_comment textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 150px;
+  margin-top: 10px;
+}
+
+.comments .write_comment input {
+  display: block;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.comments .write_comment button {
+  cursor: pointer;
+}
+
+.comments .comment {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.comments .comment > .img {
+  padding-right: 15px;
+}
+
+.comments .comment > .img img {
+  border-radius: 5px;
+}
+
+.comments .comment > .con {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+.comments .comment > .con .votes {
+  display: flex;
+  flex-flow: column;
+  min-width: 40px;
+  align-items: center;
+}
+
+.comments .comment > .con .votes .up, .comments .comment > .con .votes .down {
+  display: flex;
+  text-decoration: none;
+}
+
+.comments .comment > .con .votes .up span {
+  transform: rotate(45deg);
+}
+
+.comments .comment > .con .votes .down span {
+  transform: rotate(225deg);
+}
+
+.comments .comment > .con .name {
+  display: inline;
+  padding: 0 5px 3px 0;
+  margin: 0;
+  font-size: 16px;
+  color: #555555;
+}
+
+.comments .comment > .con .date {
+  color: #888888;
+  font-size: 14px;
+}
+
+.comments .comment > .con .comment_content {
+  display: inline-block;
+  max-width: 100%;
+  padding: 5px 0 5px 0;
+  margin: 0;
+}
+
+.comments .comment .comment_footer {
+  display: flex;
+  flex-flow: row;
+}
+
+.comments .comment .comment_footer a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.comments .comment .comment_footer a:hover .arrow {
+  border: solid #555555;
+  border-width: 0 2px 2px 0;
+}
+
+.comments .comment .comment_footer .num {
+  color: #888888;
+  padding-right: 5px;
+  font-size: 14px;
+}
+
+.comments .comment .comment_footer .arrow {
+  border: solid #777777;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+}
+
+.comments .comment .comment_footer .arrow.up {
+  transform: translateY(-2px) rotate(-135deg);
+}
+
+.comments .comment .comment_footer .arrow.down {
+  transform: translateY(-4px) rotate(45deg);
+}
+
+.comments .comment .comment_footer .reply_comment_btn {
+  display: inline-block;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.comments .comment .comment_footer .reply_comment_btn:hover {
+  color: #555555;
+}
+
+.comments .show_more_comments {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  color: #777;
+  background-color: #eee;
+  margin: 25px 0;
+  font-size: 14px;
+}
+
+.comments .show_more_comments:hover {
+  background-color: #e1e1e1;
+}
+
+.comments .loader {
+  display: inline-block;
+  border: 2px solid #999;
+  border-top: 2px solid #eee;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s ease infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
